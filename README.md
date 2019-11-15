@@ -1,7 +1,7 @@
 # frontend-responsive-design
 Opdracht voor het vak Frontend @CMD Amsterdam
 
-[Beschrijf hier wat ij gaat doen]
+[Ik ga mijn eigen verhalen website van HvanA van het vorige blok Vormgeving coderen]
 
 ## Criteria
 ### 1.) De HTML is gestructureerd en semantisch opgemaakt
