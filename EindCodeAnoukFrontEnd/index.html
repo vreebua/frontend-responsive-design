@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verhalenwebsite</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a id="logo" href="index2.html" title="Hoofdpagina"><img src="images/hvanalogo.png" alt="Logo"></a></li>
+
+                <!-- Ik heb de overige a's bij elkaar gezet, omdat ze allemaal niet linkbaar zijn -->
+
+                <li class="kanverstoppen"><a>Lees - kijk - luister</a></li>
+                <li><a id="hamburger" href="index2.html" title="Hoofdpagina"><img src="images/hamburger.png" alt="Menu"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ik heb gekozen om hieronder nog een header te plaatsen, omdat dit altijd met de nav hierboven bovenaan de pagina zal staan, echter zal de content van hieronder wel dagelijks kunnen veranderen -->
+
+    <header>
+        <section>
+            <img src="images/regionaaldagblad.jpg" alt="regionaaldagblad">
+            <a>Klik hier voor het verhaal van de dag: Regionaal Dagblad</a>
+        </section>
+    </header>
+
+    <!-- Al de id's en classes zijn voornamelijk gebruikt voor javascipt, met 1 of 2 uitzonderingen voor css -->
+
+    <h2 id="introtekst">Voor het vak Vormgeving gaven studenten aan de opleiding Communication and Multimedia Design (Hogeschool van Amsterdam) 99 verhalen van Max Molovich vorm.</h2>
+
+    <article>
+        <img src="images/christiaanvandokkum.jpeg" alt="docent">
+        <h3>'Mijn studenten weten mij elke keer weer te verrassen.' Christiaan van Dokkum - docent Vormgeving, jaar 2 op de Hoge School van Amsterdam.</h3>
+    </article>
+
+    <article>
+        <img id="foto" src="images/maxmolovich1.jpg" alt="maxmolovich">
+        <h3 id="meerderefotos">'Door de interessante vormgeving zie ik mijn verhalen echt tot leven komen.' Max Molovich - schrijver. <button id="knop">klik hier voor meer foto's</button></h3>
+    </article>
+
+    <h2>Verhalen</h2>
+
+    <!-- Ik heb hier gekozen voor een aside, omdat het bij de content hoort maar niet noodzakelijk is -->
+
+    <aside>
+        <h4>Categorie:</h4>
+        <ul>
+            <li id="gekozenfilter">Alle categorieen (99)</li>
+            <li>Kort (33)</li>
+            <li>Middel (33)</li>
+            <li>Lang (33)</li>
+        </ul>
+    </aside>
+    <aside>
+        <h4>Datum:</h4>
+        <ul>
+            <li id="gekozenfilter">Alles</li>
+            <li>24 uur</li>
+            <li>Deze week</li>
+            <li>Deze maand</li>
+        </ul>
+    </aside>
+
+    <!-- In eerste instanstie was mijn plan om hier een main bij te zetten, omdat dit het belangrijkste is op de pagina, maar dan lukte het me niet meer om de grid te laten werken, dus moest het helaas weghalen -->
+
+    <!-- main -->
+    <article>
+        <img src="images/droom.jpg" alt="droom">
+        <h3>Droom (3)</h3>
+    </article>
+    <article>
+        <img src="images/zombie.png" alt="zombie">
+        <h3>Zombie (89)</h3>
+    </article>
+    <article>
+        <img src="images/schoorsteen.png" alt="schoorsteen">
+        <h3>Schoorsteen (11)</h3>
+    </article>
+    <!-- main -->
+
+    <nav><img src="images/socials.png" alt="socials"></nav>
+
+    <aside>
+        <h2>Een verhaal bestellen?</h2>
+
+        <label class="delabel">
+            <input class="box" type="checkbox" onclick="bestellen()">
+            <span>JA</span>
+        </label>
+
+        <form class="formulier">
+            <p>Vul je e-mailadres in:</p>
+            <input type="text" name="emailadres" value="E-mailadres">
+            <p>Vul je voornaam in:</p>
+            <input type="text" name="voornaam" value="Voornaam">
+            <p>Vul je achternaam in:</p>
+            <input type="text" name="achternaam" value="Achternaam">
+            <p>Naam verhaal</p>
+            <input type="text" name="achternaam" value="Naam verhaal">
+            <p>Soort uitgave</p>
+            <input list="uitgaves" name="browser">
+            <datalist id="uitgaves">
+                <option value="Gebonden boek"></option>
+                <option value="Paperback"></option>
+                <option value="Pocket boek"></option>
+                <option value="Dwarsliggers"></option>
+                <option value="Hardcover"></option>
+            </datalist>
+            <p>Vul de bedrijfsnaam in:</p>
+            <input type="text" name="bedrijfsnaam" value="Bedrijfsnaam">
+            <p>Vul je telefoonnummer in</p>
+            <input type="text" name="telefoonnummer" value="Telefoonnummer"><br><br><br>
+            <input type="submit" value="Bestellen">
+        </form>
+    </aside>
+
+    <footer>
+        <section>
+            <h4 id="geel">Over Max Molovich</h4>
+            <p>Max J. Molovich. Erkend miskend genie. Initiatiefnemer en Grote Leider van Nurks. Als gematigd taoïst (één samenvatting van een Belangrijk Boek gelezen) is hij van mening dat er weliswaar niet te ontsnappen valt aan de Wil van de Wereld, maar dat je best wat kunt doen aan de manier waarop de wereld haar wil aan ons, eenvoudige stervelingen, opdringt. Dat doet zij namelijk zo nu en dan ronduit onbeschoft. Max heeft zich tot taak gesteld de wereld waar het kan tot de orde te roepen. Naast Nurk schrijft hij op ATsen werkt hij als tekstschrijver voor Meijer Verwijk Kleverman.</p>
+        </section>
+        <br>
+        <nav>
+            <a>Algemene voorwaarden</a>
+            <a>Download brochure</a>
+            <a>Copyright 2019</a>
+            <a>Webdesign: Anouk Vreeburg</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
