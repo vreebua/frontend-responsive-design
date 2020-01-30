@@ -1,0 +1,172 @@
+body {
+    font-family: Avenir;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+section {
+    color: pink;
+    margin: 1em;
+}
+
+
+article {
+    background-color: #E28DB4;
+    color: white;
+    flex-wrap: nowrap;
+}
+
+main {
+    background-color: #F8F7F7;
+}
+
+aside {
+    background-color: #35579F;
+    color: white;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ontdekken {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.ontdekfoto {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+h2 {
+    margin: 1em;
+    margin-top: 5%;
+}
+
+h3 {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+h4 {
+    color: white;
+    margin: 1em;
+}
+
+p {
+    color: white;
+    margin: 1em;
+}
+
+div {
+    display: flex;
+}
+
+ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    display: inline;
+}
+
+
+li a {
+    color: deeppink;
+    display: block;
+    float: left;
+}
+
+li a:hover {
+    color: #111;
+}
+
+#logo {
+    max-height: 6em;
+    max-width: 6em;
+}
+
+#hamburger {
+    max-height: 2em;
+    max-width: 2em;
+    padding-right: 1em;
+    float: right;
+}
+
+
+#filteren {
+    color: #4669AC;
+    text-align: center;
+}
+
+
+#gekozenfilter {
+    color: #4669AC;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type=text],
+select {
+    font-family: New Times Roman;
+    width: 50%;
+    padding: 1em;
+    color: #848384;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+select {
+    background-color: #F9D349;
+    font-size: 1em;
+    width: 20%;
+    padding: 1em;
+    color: white;
+    box-sizing: border-box;
+    margin-left: 60%;
+    margin-bottom: 5%;
+}
+
+#navfooter {
+    text-align: center;
+}
+
+@media (min-width: 45em) {
+    body {
+        color: aqua;
+    }
+}
+
+@media (min-width: 75em) {
+    body {
+        color: pink;
+    }
+}
